@@ -1,5 +1,21 @@
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
 .App {
   text-align: center;
+  text-align: center;
+  margin: 20px auto 20px auto;
+  width: 600px;
+  min-height: 600px;
+  border: 5px solid rgba(73, 204, 279, 1.0);
+  padding: 20px;
 }
 
 .App-logo {
@@ -14,19 +30,94 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 150px;
+  padding: 20px;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+ul {
+  list-style-type: none;
+}
+
+.todo-wrapper {
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  text-align: left;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  margin-right: 60px;
+  padding: 20px;
+  line-height: 17px;
+}
+
+.input {
+  margin-right: 10px;
+  padding: 5px;
+  line-height: 17px;
+  font-size: 15px;
+}
+
+.animasi-enter {
+  opacity: 0.01;
+}
+
+.animasi-enter.animasi-enter-active{
+  opacity: 1;
+  transition: opacity 800ms ease-in;
+}
+
+.animasi-leave {
+  opacity: 1;
+}
+
+.animasi-leave.animasi-leave-active {
+  transform : translateX(-100%);
+  transition : all 500ms ease-in;
+}
+
+.warna{
+  background: rgb(92, 114, 114);
+  border: 2px blue;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  font-size: 1em;
+}
+
+.button {
+  border-color: red;
+  border: none;
+  color: white;
+  width: 200px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+.button1 {
+  background-color: white; 
+  color: #a01515; 
+  border-radius: 4px;
+  font-size: small;
+  border: 1px solid #a01515;
+}
+
+.button1:hover {
+  background-color: #a01515;
+  border-radius: 4px;
+  font-size: small;
+  color: white;
+}
+
 
 @keyframes App-logo-spin {
   from {
