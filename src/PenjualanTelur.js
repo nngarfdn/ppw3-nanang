@@ -36,7 +36,7 @@ class PenjualanTelur extends Component {
 		return(
             <div className="App">
                 <Header/>
-                <h3>Log Aktivitas harian</h3>
+            
                 <form ref="formulir" className="form-inline">
                     <input type="text" className="form-control ml-3" type="date" size="8" ref="tanggal" placeholder="Tanggal"/>
                     <input type="text" className="form-control" size="8" ref="jumlah" placeholder="Jumlah(Kg)"/>
@@ -46,7 +46,6 @@ class PenjualanTelur extends Component {
                 <hr/>
                 <div>
                     <ul>
-                        
                         {this.state.penjualan.map((data, i) =>
                         <li key={i}>
                             <TransitionGroup
@@ -67,9 +66,7 @@ class PenjualanTelur extends Component {
                     </ul>
                 </div>
             </div>
-
 			)
 	}
 }
-
 export default PenjualanTelur;

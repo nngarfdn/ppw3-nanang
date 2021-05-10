@@ -4,9 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { TransitionGroup } from 'react-transition-group';
 import Header from './Header';
 
-
 class Week9 extends Component {
-
     constructor(){
 		super();
 		this.state = { todos : []};
@@ -39,13 +37,13 @@ class Week9 extends Component {
                 <h3>Log Aktivitas harian</h3>
                 <form ref="formulir" className="form-inline">
                     <input type="text" className="form-control" size="8" ref="jam" placeholder="jam aktivitas"/>
-                   <input type="text" className="form-control" size="30" ref="aktivitas" placeholder="jenis aktivitas"/>
+                    <input type="text" className="form-control" size="30" ref="aktivitas" placeholder="jenis aktivitas"/>
                     <button onClick={this.addToDo} className="btn btn-info">simpan</button>
                 </form>
                 <hr/>
+                
                 <div>
                     <ul>
-                        
                         {this.state.todos.map((data, i) =>
                         <li key={i}>
                             <TransitionGroup
